@@ -173,13 +173,13 @@ copyBtn.addEventListener("click", () => {
                 else output += `[0m`
                 prevUnderline = span.getAttribute("data-underline");
             }
-            if(span.getAttribute("data-color") != prevColor) {
-                output += `[${span.getAttribute("data-color")}m`;
-                prevColor = span.getAttribute("data-color");
-            }
             if(span.getAttribute("data-background") != prevBackground) {
                 output += `[${span.getAttribute("data-background")}m`;
                 prevBackground = span.getAttribute("data-background");
+            }
+            if(span.getAttribute("data-color") != prevColor) {
+                output += `[${span.getAttribute("data-color")}m`;
+                prevColor = span.getAttribute("data-color");
             }
             output += span.textContent;
         } else {
