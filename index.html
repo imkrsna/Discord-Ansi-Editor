@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="fontawesome.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Ansi</h1>
+        <div class="inputContainer">
+            <textarea class="inputText" placeholder="Enter your text here"></textarea>
+            <button class="submitbtn"><i class="fa-solid fa-pen-circle"></i></button>
+        </div>
+        <div class="buttons">
+            <button id="clean" class="btn"><i class="fa-solid fa-brush"></i></button>
+            <button id="bold" class="btn"><i class="fa-solid fa-bold"></i></button>
+            <button id="underline" class="btn"><i class="fa-solid fa-underline"></i></button>
+            <button id="fg-color" class="btn">
+                <span>color</span>
+                <i id="selectColor"
+                    data-color="37"
+                    class="fa-solid fa-square"
+                    style="color: #ffffff;">
+                </i>
+                <div id="fgDropDown" class="dropdown">
+                    <div class="dropdown-items deactive">
+                        <div class="dropdown-item"
+                            data-color="30"
+                            style="background-color: #4f545c;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="31"
+                            style="background-color: #dc322f;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="32"
+                            style="background-color: #859900;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="33"
+                            style="background-color: #b58900;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="34"
+                            style="background-color: #268bd2;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="35"
+                            style="background-color: #d33682;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="36"
+                            style="background-color: #2aa198;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="37"
+                            style="background-color: #ffffff;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-color="0" 
+                            style="background-color: #b9bbbe;">
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button id="bg-color" class="btn">
+                <span>bg color</span>
+                <i id="selectBgColor"
+                    data-background="47"
+                    class="fa-solid fa-square"
+                    style="color: #fdf6e3;">
+                </i>
+                <div id="bgDropDown" class="dropdown">
+                    <div class="dropdown-items deactive">
+                        <div class="dropdown-item"
+                            data-background="40"
+                            style="background-color: #002b36;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="41"
+                            style="background-color: #cb4b16;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="42"
+                            style="background-color: #586e75;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="43"
+                            style="background-color: #657b83;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="44"
+                            style="background-color: #839496;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="45"
+                            style="background-color: #6c71c4;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="46"
+                            style="background-color: #626a6c;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="47"
+                            style="background-color: #fdf6e3;">
+                        </div>
+                        <div class="dropdown-item"
+                            data-background="0"
+                            style="background-color: #2f3136;">
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button id="clear" class="btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <div class="preview"></div>
+        <button class="copy">COPY</button>
+        <!-- <div class="popup">
+            <h1>Copied!!!</h1>
+        </div> -->
+    </div>
+</body>
+</html>

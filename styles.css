@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Sen", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #36393f;
+}
+
+.container {
+  height: 100%;
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.submitbtn {
+  width: 5rem;
+  font-size: 3rem;
+  color: white;
+  background: #5865f2;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  border: 1px solid #202225;
+}
+
+.inputText {
+  flex: 1;
+  font-size: 1.5rem;
+  height: 5rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  border: 1px solid #202225;
+  background-color: #2f3136;
+  color: white;
+}
+
+.inputText::placeholder {
+  color: #72767d;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  background-color: #2f3136;
+  position: relative;
+}
+
+.btn span {
+  margin-right: 1.5rem;
+}
+
+.btn .fa-square {
+  font-size: 2.5rem;
+}
+
+.preview {
+  width: 100%;
+  height: 25rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: Consolas, monaco, monospace;
+  color: #b9bbbe;
+  border: 1px solid #202225;
+  background-color: #2f3136;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+}
+
+.preview::-webkit-scrollbar {
+  width: 0;
+}
+
+.copy {
+  height: 5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: #5865f2;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: .2s ease-in-out;
+}
+.dropdown {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  width: 15rem;
+  height: 15rem;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.dropdown-items {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #202225;
+  border-radius: 1rem;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  color: black;
+  pointer-events: all;
+}
+
+.deactive {
+  visibility: hidden;
+}
+
+.popup {
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:#202225;
+  width: 30rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  pointer-events: none;
+}
