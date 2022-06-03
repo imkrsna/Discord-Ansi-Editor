@@ -146,7 +146,7 @@ bgColorBtn.addEventListener("click", () => {
         for(span of selection) {
             let color = getComputedStyle(selectBgColor, null).getPropertyValue("color");
             span.style.backgroundColor = color;
-            span.setAttribute("data-color", selectBgColor.getAttribute("data-background"));
+            span.setAttribute("data-background", selectBgColor.getAttribute("data-background"));
         }
     }
 });
